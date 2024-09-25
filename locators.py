@@ -27,22 +27,14 @@ class Locators:
     CHANGE_PASSWORD_TITLE = (By.XPATH, '//h2[text()="Восстановление пароля"]')  # Заголовок "Восстановление пароля"
     CHANGE_PASSWORD_BTN = (By.XPATH, '//button[text()="Восстановить"]')   # Кнопка "Восстановить"
     SAVE_NEW_PASSWORD_BTN = (By.XPATH, '//button[text()="Сохранить"]')   # Кнопка "Сохранить"
-
     NEW_PASSWORD_INPUT= (By.XPATH, '//input[@name="Введите новый пароль"]') # Поле ввода нового пароля
     SHOW_PASSWORD_BTN = (By.XPATH, '//div[@class="input__icon input__icon-action"]') # Кнопка отображения
-
     BURGER_LOCATOR = (By.XPATH, '//p[contains(text(),"Флюоресцентная булка")]')
-
     INGREDIENT_DETAILS_TITLE = (By.XPATH, '//h2[text()="Детали ингредиента"]') # Заголовок у popup
-
-
     INGREDIENT_POPUP = (By.XPATH, '//section[contains(@class,"Modal_modal")]')
     ORDER = (By.XPATH, '//li[contains(@class, "OrderHistory_listItem__2x95r")]')
     ORDERS_POPUP = (By.XPATH, '//section[contains(@class,"Modal_modal")]')
-
     CLOSE_ICON_BTN = (By.XPATH, '//button[@class="Modal_modal__close_modified__3V5XS Modal_modal__close__TnseK"]') # Иконка крестик на popup
-
-
     SAUSE_SPICY_X_INGREDIENT_COUNTER = (By.XPATH, "//a[@href='/ingredient/61c0c5a71d1f82001bdaaa72']//div[contains(@class, 'counter_counter__ZNLkj')]") # Счетчик у соуса
     SAUSE_SPICY_X_INGREDIENT = (By.XPATH, '//p[contains(text(), "Соус Spicy-X")]')
     BASKET_LOCATOR = (By.XPATH, '//ul[@class="BurgerConstructor_basket__list__l9dp_"]') # Поле корзины
@@ -50,13 +42,9 @@ class Locators:
     ORDER_SUBTITLE = (By.XPATH, '//p[text()="идентификатор заказа"]') # Подзаголовок на popup
     ORDER_LIST_TITLE = (By.XPATH, '//h1[text()="Лента заказов"]')
     BUN = (By.XPATH, "//a[@href='/ingredient/61c0c5a71d1f82001bdaaa6d']")
-
     ORDER_NUMBER = (By.XPATH, "//h2[contains(@class, 'Modal_modal__title')]")
-    # #ORDER_LIST = (By.XPATH, "//div[@class='OrderFeed_list__OLh59']")
-    # ORDER_NUMBER_IN_LIST = (By.XPATH, '//p[contains(@class, "text_type_digits-default")]')
-    # ORDERS = (By.XPATH, '//li[contains(@class, "OrderHistory_listItem__2x95r")]')
-    ORDER_NUMBER_IN_LIST = (By.XPATH, "//ul[contains(@class, 'OrderFeed_list__OLh59')]/li[1]//p[contains(@class, 'text_type_digits-default')]")
-
+    ORDER_NUMBER_IN_LIST = (By.XPATH, "//ul[contains(@class, 'OrderFeed_list')]/li[1]//p[contains(@class, 'text_type_digits-default')]")
     ALL_ORDERS = (By.XPATH, "//div[contains(@class,'undefined')]//p[contains(@class, 'text_type_digits-large')]")
-    TODAY_ORDERS = (By.XPATH, "//p[text()='Выполнено за сегодня:']/following-sibling::p[contains(@class, 'OrderFeed_number__2MbrQ')]")
-    ORDER_IN_PROGRESS = (By.XPATH, "//ul[contains(@class, 'OrderFeed_orderListReady')]")
+    TODAY_ORDERS = (By.XPATH, "//p[text()='Выполнено за сегодня:']/following-sibling::p[contains(@class, 'OrderFeed_number')]")
+    ORDER_IN_PROGRESS = (By.XPATH, "//ul[contains(@class, 'OrderFeed_orderListReady')]//li[contains(@class,'text_type_digits')]")
+    LOADER = (By.XPATH, "//img[contains(@class, 'Modal_modal__loading')]")

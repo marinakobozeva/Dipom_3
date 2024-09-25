@@ -1,4 +1,3 @@
-import pytest
 from locators import Locators
 from pages.personal_account_page import PersonalAccountPage
 from constants import Constants
