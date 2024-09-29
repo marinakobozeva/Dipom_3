@@ -33,7 +33,7 @@ class Locators:
     INGREDIENT_DETAILS_TITLE = (By.XPATH, '//h2[text()="Детали ингредиента"]') # Заголовок у popup
     INGREDIENT_POPUP = (By.XPATH, '//section[contains(@class,"Modal_modal")]')
     ORDER = (By.XPATH, '//li[contains(@class, "OrderHistory_listItem__2x95r")]')
-    ORDERS_POPUP = (By.XPATH, '//section[contains(@class,"Modal_modal")]')
+    ORDERS_POPUP = (By.XPATH, '//section[contains(@class,"Modal_modal_opened")]')
     CLOSE_ICON_BTN = (By.XPATH, '//button[@class="Modal_modal__close_modified__3V5XS Modal_modal__close__TnseK"]') # Иконка крестик на popup
     SAUSE_SPICY_X_INGREDIENT_COUNTER = (By.XPATH, "//a[@href='/ingredient/61c0c5a71d1f82001bdaaa72']//div[contains(@class, 'counter_counter__ZNLkj')]") # Счетчик у соуса
     SAUSE_SPICY_X_INGREDIENT = (By.XPATH, '//p[contains(text(), "Соус Spicy-X")]')
